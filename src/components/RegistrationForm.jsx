@@ -50,7 +50,10 @@ const RegistrationForm = () => {
             </label><br />
             <label>Photo Waiver:
                 <input type="checkbox" name="waiverAccepted" onChange={handleChange} required />
-            </label><br />
+            </label>
+            <p>
+                By registering, you agree to our <a href="/waiver" target="_blank" rel="noopener noreferre">Photo Waiver</a>.
+            </p>
             <button type="submit">Submit</button>
         </form>
     );
