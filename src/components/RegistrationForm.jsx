@@ -30,6 +30,11 @@ const RegistrationForm = () => {
             return;
         }
 
+        if (formData.childAge < 2 || formData.childAge > 11) {
+            alert("Sorry, this program is for children ages 2-11 only.");
+            return;
+        }
+
         try {
             await addDoc(collection(db, "registrations"), formData);
             alert("Registration submitted! 🌱")
