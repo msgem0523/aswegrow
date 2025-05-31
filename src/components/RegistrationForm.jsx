@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../firebase";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
@@ -23,6 +23,12 @@ const RegistrationForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        cons querySnapshot = await getDocs(collection(db, "registrations"));
+        if (querySnapshot.size >= 30) {
+            alert("Sorry, the event is full. We've reached our limit.");
+            return;
+        }
 
         try {
             await addDoc(collection(db, "registrations"), formData);
