@@ -30,55 +30,98 @@ const RegistrationForm = () => {
             return;
         }
 
-        if (formData.childAge < 2 || formData.childAge > 11) {
+        const age = Number(formData.childAge);
+
+        if (age < 2 || age > 11) {
             alert("Sorry, this program is for children ages 2-11 only.");
             return;
         }
 
         try {
             await addDoc(collection(db, "registrations"), formData);
-            alert("Registration submitted! 🌱")
+            alert("Registration submitted! 🌱");
+
+            setFormData({
+                parentFirstName: "",
+                parentLastName: "",
+                email: "",
+                phone: "",
+                childName: "",
+                childAge: "",
+                childShirtSize: "",
+                // datePlanted: "",
+                waiverAccepted: false,
+            });
         } catch (err) {
             console.error("Error adding document: ", err);
             alert("Something went wrong!");
         }
-
-        setFormData({
-            parentFirstName: "",
-            parentLastName: "",
-            email: "",
-            phone: "",
-            childName: "",
-            childAge: "",
-            childShirtSize: "",
-            // datePlanted: "",
-            waiverAccepted: "",
-        });
     };
 
     return (
         <form onSubmit={handleSubmit}>
             <h2>🌱 As We Grow: Garden Day Event Registration</h2>
             <label>Parent First Name:
-                <input type="text" name="parentFirstName" onChange={handleChange} required />
+                <input 
+                    type="text" 
+                    name="parentFirstName" 
+                    value={formData.parentFirstName}
+                    onChange={handleChange} 
+                    required 
+                />
             </label><br />
             <label>Parent Last Name:
-                <input type="text" name="parentLastName" onChange={handleChange} required />
+                <input 
+                    type="text" 
+                    name="parentLastName" 
+                    value={formData.parentLastName}
+                    onChange={handleChange} 
+                    required 
+                />
             </label><br />
             <label>Email:
-                <input type="email" name="email" onChange={handleChange} required />
+                <input 
+                    type="email" 
+                    name="email" 
+                    value={formData.email}
+                    onChange={handleChange} 
+                    required 
+                />
             </label><br />
             <label>Phone:
-                <input type="tel" name="phone" onChange={handleChange} required />
+                <input 
+                    type="tel" 
+                    name="phone" 
+                    value={formData.phone}
+                    onChange={handleChange} 
+                    required 
+                />
             </label><br />
             <label>Child's Name:
-                <input type="text" name="childName" onChange={handleChange} required />
+                <input 
+                    type="text" 
+                    name="childName" 
+                    value={formData.childName}
+                    onChange={handleChange} 
+                    required 
+                />
             </label><br />
             <label>Child's Age:
-                <input type="number" name="childAge" onChange={handleChange} required />
+                <input 
+                    type="number" 
+                    name="childAge" 
+                    value={formData.childAge}
+                    onChange={handleChange} 
+                    required 
+                />
             </label><br />
             <label>Child's Shirt Size:
-                <select name="childShirtSize" onChange={handleChange} required>
+                <select 
+                    name="childShirtSize" 
+                    value={formData.childShirtSize}
+                    onChange={handleChange} 
+                    required
+                >
                     <option value="">--Select Size--</option>
                     <option value="2T">2T(1/2)</option>
                     <option value="3T">3T(2/3)</option>
@@ -92,10 +135,21 @@ const RegistrationForm = () => {
                 </select>
             </label>
             {/* <label>Date Planted:
-                <input type="date" name="datePlanted" onChange={handleChange} required />
+                <input 
+                type="date" 
+                name="datePlanted" 
+                value={formData.datePlanted}
+                onChange={handleChange} 
+                required />
             </label><br /> */}
             <label>Photo Waiver:
-                <input type="checkbox" name="waiverAccepted" onChange={handleChange} required />
+                <input 
+                    type="checkbox" 
+                    name="waiverAccepted" 
+                    checked={formData.waiverAccepted}
+                    onChange={handleChange} 
+                    required 
+                />
             </label>
             <p>
                 By registering, you agree to our <a href="/waiver" target="_blank" rel="noopener noreferre">Photo Waiver</a>.
