@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { db } from "../firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
@@ -8,25 +10,31 @@ const RegistrationForm = () => {
         phone: "",
         childName: "",
         childAge: "", //update to dob and add age calculation
-        datePlanted: "",
+        // datePlanted: "",
         waiverAccepted: false,
     });
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
         const newValue = type === "checkbox" ? checked : value;
-        setFormData({ ...formData, [name]: newvalue });
+        setFormData({ ...formData, [name]: newValue });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Submitted data:", formData);
-        // send to backend
+
+        try {
+            await addDoc(collection(db, "registrations"), formData);
+            alert("Registration submitted! 🌱")
+        } catch (err) {
+            console.error("Error adding document: ", err);
+            alert("Something went wrong!");
+        }
     };
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2>🌱 As We Grow: Event Registration</h2>
+            <h2>🌱 As We Grow: Garden Day Event Registration</h2>
             <label>Parent First Name:
                 <input type="text" name="parentFirstName" onChange={handleChange} required />
             </label><br />
@@ -45,9 +53,9 @@ const RegistrationForm = () => {
             <label>Child's Age:
                 <input type="number" name="childAge" onChange={handleChange} required />
             </label><br />
-            <label>Date Planted:
+            {/* <label>Date Planted:
                 <input type="date" name="datePlanted" onChange={handleChange} required />
-            </label><br />
+            </label><br /> */}
             <label>Photo Waiver:
                 <input type="checkbox" name="waiverAccepted" onChange={handleChange} required />
             </label>
