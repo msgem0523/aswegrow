@@ -24,7 +24,7 @@ const RegistrationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        cons querySnapshot = await getDocs(collection(db, "registrations"));
+        const querySnapshot = await getDocs(collection(db, "registrations"));
         if (querySnapshot.size >= 30) {
             alert("Sorry, the event is full. We've reached our limit.");
             return;
