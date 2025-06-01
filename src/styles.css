@@ -1,18 +1,19 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f1f1d; /* deep emerald-toned background */
-  color: #f4f4f4;
+  font-family: 'Playfair Display', serif;
+  background-image: url('./assets/bamboo_pic1.jpg'); /* adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 2rem;
-  display: flex;
-  justify-content: center;
 }
 
 form {
   background-color: #173430; /* emerald green container */
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); */
   width: 100%;
   max-width: 500px;
 }
@@ -66,4 +67,13 @@ button:hover {
 a {
   color: #ffce59;
   text-decoration: underline;
+}
+
+h2, h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #ffce59;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
 }
