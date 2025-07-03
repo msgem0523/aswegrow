@@ -46,7 +46,7 @@ const Waiver = () => {
             <p>
               Thank you for helping us grow our community together!
             </p>
-            <p><a href="/">Back to Registration</a></p>
+            <Link to="/gmsc">Back to Registration</Link>
           </div>
         </div>
     );
