@@ -87,9 +87,11 @@ const NavBar = () => {
       }}>
         <Link to="/" style={styles.link} onClick={() => setIsOpen(false)}>Home</Link>
         <Link to="/hair" style={styles.link} onClick={() => setIsOpen(false)}>Hair</Link>
+        <Link to="/bridal" style={styles.link} onClick={() => setIsOpen(false)}>Bridal</Link>
         <Link to="/hair-care-products" style={styles.link} onClick={() => setIsOpen(false)}>Hair Products</Link>
-        <Link to="/gmsc" style={styles.link} onClick={() => setIsOpen(false)}>GMSC</Link>
         <Link to="/teas" style={styles.link} onClick={() => setIsOpen(false)}>Teas</Link>
+        <Link to="/gmsc" style={styles.link} onClick={() => setIsOpen(false)}>GMSC</Link>
+        <Link to="/merch" style={styles.link} onClick={() => setIsOpen(false)}>Merch</Link>
       </div>
     </nav>
   );
