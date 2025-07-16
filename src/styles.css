@@ -77,3 +77,42 @@ h2, h3 {
 body {
   font-family: 'Playfair Display', serif;
 }
+
+.tea-card {
+  background-color: rgba(0, 0, 0, 0.6); /* dark translucent - light translucentoption - rgba(255, 255, 255, 0.85) */
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 15px;
+  max-width: 800px;
+  color: #fff; /* Keep text readable #2e2e2e - other option for text */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tea-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #f4c542;
+  margin-bottom: 0.5rem;
+}
+
+.tea-card h3, .tea-card h4 {
+  font-family: 'Playfair Display', serif;
+  color: #ffc96b;
+  margin-top: 1.5rem;
+}
+
+.tea-card p, .tea-card li {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.tea-card {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tea-card:hover {
+  transform: scale(1.01);
+  background-color: rgba(0, 0, 0, 0.7); /* slightly more bold */
+}
+

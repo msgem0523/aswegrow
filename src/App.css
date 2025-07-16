@@ -42,9 +42,12 @@
 }
 
 .tea-card {
-  padding: 1.5rem;
-  border-radius: 1rem;
-  background-color: #fdfaf6;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.6); /* dark translucent */
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 15px;
+  max-width: 800px;
+  color: #fff; /* Keep text readable */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
+
