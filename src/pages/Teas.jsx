@@ -1,9 +1,18 @@
-const Teas = () => {
-  return (
-    <div className="tea-page">
-      <h1>🌿 As We Grow Teas</h1>
-      
-      <div className="tea-card">
+import React, { useState } from 'react';
+
+const teaList = [
+  {
+    id: 'ms-georgia-peach',
+    name: 'Ms. Georgia Peach',
+    shortDesc: 'Southern Sweetness Meets Soulful Wellness',
+    benefits: [
+      'Supports digestion',
+      'Rich in antioxidants',
+      'Glowing skin',
+      'Heart & immune support'
+    ],
+    fullContent: (
+      <>
         <h2>🍑 “Ms. Georgia Peach” – Southern Sweetness Meets Soulful Wellness</h2>
         <p><strong>Light. Luscious. Naturally Healing.</strong></p>
         <p>
@@ -11,7 +20,6 @@ const Teas = () => {
           and gently sweetened with monk fruit. She’s more than sweet — she’s packed with vitamins, fiber, 
           and antioxidants that nourish from the inside out.
         </p>
-
         <h3>🌿 Why You’ll Love It</h3>
         <ul>
           <li><strong>🍑 Peaches –</strong> Support digestion, boost immunity, promote glowing skin, reduce blood pressure, improve eye health, and fight inflammation.</li>
@@ -19,18 +27,8 @@ const Teas = () => {
           <li><strong>🎋 Bamboo Leaf –</strong> Detoxifying and rich in silica; supports skin, bone, and hair health.</li>
           <li><strong>🍃 Monk Fruit –</strong> Naturally sweet, zero-calorie, blood sugar-friendly.</li>
         </ul>
-
-        <p>
-          ✨ A light, juicy tea that’s caffeine-free, additive-free, and full of goodness. 
-          Serve hot or iced — she’s a summer staple and a year-round feel-good favorite.
-        </p>
-
-        <h4>📦 Order Now</h4>
-        <p>Available at: <a href="#">[Insert your shop link]</a></p>
-
         <h4>🏷️ Ingredients</h4>
         <p>Bamboo Leaf • Mint • Peaches • Monk Fruit</p>
-
         <h4>🌿 Benefits</h4>
         <ul>
           <li>✔️ Supports digestion & gut health</li>
@@ -38,13 +36,23 @@ const Teas = () => {
           <li>✔️ Promotes healthy skin, heart & immune function</li>
           <li>✔️ Caffeine-Free • Sugar-Free • Naturally Healing</li>
         </ul>
-
         <h4>🍵 Steep Instructions</h4>
         <p>1–2 tsp per 8 oz of hot water. Steep 5–7 minutes. Enjoy hot or chilled.</p>
-
         <p><em>From the heart of the South — brewed with love.</em></p>
-      </div>
-      <div className="tea-card">
+      </>
+    )
+  },
+  {
+    id: 'mama-renea',
+    name: 'Mama Renea',
+    shortDesc: 'Immunity Blend – Strength in Every Sip',
+    benefits: [
+      'Boosts immunity',
+      'Reduces inflammation',
+      'Gut healing'
+    ],
+    fullContent: (
+      <>
         <h2>🍋✨ “Mama Renea” Immunity Blend Tea – Strength in Every Sip</h2>
         <p><strong>Brew. Sip. Heal. 💛</strong></p>
         <p>
@@ -53,7 +61,6 @@ const Teas = () => {
           anti-inflammatory turmeric and ginger, and warming spices like cinnamon and pepper. 
           Monk fruit adds a sweet, sugar-free finish.
         </p>
-
         <h3>🌿 Why You’ll Love It</h3>
         <ul>
           <li>✔️ Strengthens the immune system</li>
@@ -62,28 +69,8 @@ const Teas = () => {
           <li>✔️ Promotes clarity, comfort, and calm</li>
           <li>✔️ Caffeine-free, additive-free, sugar-free</li>
         </ul>
-
-        <h4>🫖 Key Herbal Highlights</h4>
-        <ul>
-          <li><strong>🍋 Lemon –</strong> Vitamin C-rich, supports skin clarity, gut balance, and immune defense</li>
-          <li><strong>🫚 Ginger –</strong> Calms nausea, supports immunity, eases inflammation</li>
-          <li><strong>🌱 Turmeric –</strong> Supports joints, brain & heart health</li>
-          <li><strong>🍂 Cinnamon –</strong> Balances blood sugar & delivers antioxidants</li>
-          <li><strong>🍃 Monk Fruit –</strong> Naturally sweet, zero sugar</li>
-          <li><strong>🌿 Eucalyptus & Gordolobo –</strong> Comforts respiratory & immune systems</li>
-        </ul>
-
-        <p>
-          ✨ A beautiful, grounding tea that brings warmth, comfort, and clarity from the inside out. 
-          Naturally caffeine-free, sugar-free, and crafted with love.
-        </p>
-
-        <h4>📦 Order Now</h4>
-        <p>Available at: <a href="#">[Insert purchase link]</a></p>
-
         <h4>🏷️ Ingredients</h4>
         <p>Bamboo Leaf • Mint • Lemon • Turmeric • Ginger • Cinnamon • Pepper • Eucalyptus • Gordolobo • Monk Fruit</p>
-
         <h4>🌿 Benefits</h4>
         <ul>
           <li>✔️ Immunity & Digestion</li>
@@ -91,13 +78,23 @@ const Teas = () => {
           <li>✔️ Skin, Brain & Heart Wellness</li>
           <li>✔️ Naturally sweetened • No caffeine • No additives</li>
         </ul>
-
         <h4>🍵 Steep Instructions</h4>
         <p>1–2 tsp per 8 oz of hot water. Steep 5–7 minutes. Enjoy warm for full immune support.</p>
-
         <p><em>Brew. Sip. Heal. 💛</em></p>
-      </div>
-      <div className="tea-card">
+      </>
+    )
+  },
+  {
+    id: 'mama-natalie',
+    name: 'Mama Natalie',
+    shortDesc: 'Earthy. Bold. Restorative.',
+    benefits: [
+      'Heart health',
+      'Circulation',
+      'Nourishing roots'
+    ],
+    fullContent: (
+      <>
         <h2>❤️🌿 “Mama Natalie” Brew – Earthy. Bold. Restorative.</h2>
         <p><strong>Crafted for the nurturers. Inspired by tradition. Brewed with purpose.</strong></p>
         <p>
@@ -105,7 +102,6 @@ const Teas = () => {
           supporting blood pressure, circulation, and overall vitality. With powerful roots, 
           heart-loving herbs, and naturally sweet monk fruit, this blend is your daily ritual for full-body balance.
         </p>
-
         <h3>🌟 Why You’ll Love It</h3>
         <ul>
           <li><strong>🧄 Garlic –</strong> Supports circulation, heart health & relaxed blood vessels</li>
@@ -119,33 +115,58 @@ const Teas = () => {
           <li><strong>🎋 Bamboo Leaf –</strong> Detoxifying; supports skin, hair, and bones</li>
           <li><strong>🍈 Monk Fruit –</strong> Naturally sweet with zero sugar</li>
         </ul>
-
-        <p>
-          ✨ This isn’t just a tea. It’s nourishment rooted in ancestral wisdom. Caffeine-free, sugar-free, and made with purpose.
-        </p>
-
-        <h4>📦 Order Now</h4>
-        <p>Available at: <a href="#">[Insert purchase link]</a></p>
-
         <h4>🏷️ Ingredients</h4>
         <p>
           Garlic • Ginger • Parsley • Hibiscus • Lemongrass • Beets • Basil • Mint • 
           Bamboo Leaf • Cinnamon • Monk Fruit
         </p>
-
         <h4>🌿 Benefits</h4>
         <ul>
           <li>✔️ Supports blood pressure & circulation</li>
           <li>✔️ Promotes heart, brain, and full-body balance</li>
           <li>✔️ Naturally sweetened • No caffeine • No additives</li>
         </ul>
-
         <h4>🍵 Steep Instructions</h4>
         <p>Steep 1–2 tsp in 8 oz of hot water for 7–10 minutes. Enjoy warm or iced.</p>
-
         <p><em>🫖 Made to honor the strength in every generation.</em></p>
         <p style={{ color: 'red' }}><strong>⚠️ Always consult your healthcare provider before use, especially if on medication.</strong></p>
+      </>
+    )
+  }
+];
+
+const Teas = () => {
+  const [selectedTea, setSelectedTea] = useState(null);
+
+  return (
+    <div className="tea-page">
+      <h1>🌿 As We Grow Teas</h1>
+
+      <div className="tea-grid">
+        {teaList.map((tea) => (
+          <div
+            className="tea-preview-card"
+            key={tea.id}
+            onClick={() => setSelectedTea(tea)}
+          >
+            <h3>{tea.name}</h3>
+            <p>{tea.shortDesc}</p>
+            <ul>
+              {tea.benefits.map((b, i) => (
+                <li key={i}>✔️ {b}</li>
+              ))}
+            </ul>
+            <button>View Details</button>
+          </div>
+        ))}
       </div>
+
+      {selectedTea && (
+        <div className="tea-modal">
+          <button onClick={() => setSelectedTea(null)}>❌ Close</button>
+          <div className="tea-card">{selectedTea.fullContent}</div>
+        </div>
+      )}
     </div>
   );
 };
