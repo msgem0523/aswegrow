@@ -1,7 +1,5 @@
-import { teaList } from './teaData';
+import { teaList } from './teaData.jsx';
 import React, { useState } from 'react';
-
-import { teas } from './data/teaData';
 
 const Teas = () => {
   const [selectedTea, setSelectedTea] = useState(null);
@@ -14,7 +12,7 @@ const Teas = () => {
       </p>
 
       <div className="tea-grid">
-        {teas.map((tea) => (
+        {teaList.map((tea) => (
           <div
             className="tea-preview-card"
             key={tea.id}
