@@ -29,9 +29,6 @@ export const teaList = [
         <h4>🏷️ Ingredients</h4>
         <p>Bamboo Leaf • Mint • Peaches • Monk Fruit</p>
 
-        <h4>🍵 Steep Instructions</h4>
-        <p>1–2 tsp per 8 oz of hot water. Steep 5–7 minutes. Enjoy hot or chilled.</p>
-
         <p><em>From the heart of the South — brewed with love.</em></p>
       </>
     )
@@ -79,9 +76,6 @@ export const teaList = [
         <h4>🏷️ Ingredients</h4>
         <p>Bamboo Leaf • Mint • Lemon • Turmeric • Ginger • Cinnamon • Pepper • Eucalyptus • Gordolobo • Monk Fruit</p>
 
-        <h4>🍵 Steep Instructions</h4>
-        <p>1–2 tsp per 8 oz hot water. Steep 5–7 minutes. Serve hot or iced.</p>
-
         <p><em>Sweetened naturally. No caffeine. No additives. Just pure comfort in a cup.</em></p>
       </>
     )
@@ -127,9 +121,6 @@ export const teaList = [
             Bamboo Leaf • Cinnamon • Monk Fruit
         </p>
 
-        <h4>🍵 Steep Instructions</h4>
-        <p>Steep 1–2 tsp in 8 oz of hot water for 7–10 minutes. Enjoy warm or iced.</p>
-
         <p><em>🫖 Made to honor the strength in every generation.</em></p>
         <p><strong>⚠️ Always consult your healthcare provider before use, especially if on medication.</strong></p>
       </>
@@ -174,8 +165,6 @@ export const teaList = [
         <h4>🏷️ Ingredients</h4>
         <p>Fenugreek • Pineapple • Bamboo Leaf • Ginger • Mint • Chamomile • Monk Fruit</p>
 
-        <h4>🍵 Steep Instructions</h4>
-        <p>1–2 tsp in 8oz hot water. Steep 5–7 minutes. Sip warm or iced.</p>
         <p><em>All-Natural | Caffeine-Free | Sugar-Free</em></p>
       </>
     )
@@ -218,8 +207,7 @@ export const teaList = [
           <li>✔️ Boosts antioxidants for reproductive wellness</li>
           <li>✔️ Caffeine-Free • Naturally Sweet • Holistic Healing</li>
         </ul>
-        <h4>🍵 Steep Instructions</h4>
-        <p>Use 1–2 tsp per 8 oz of hot water. Steep 5–10 minutes. Drink warm or cool.</p>
+        
         <p><em>Please consult your healthcare provider if you are undergoing fertility treatment or on medication.</em></p>
       </>
     )
@@ -253,9 +241,6 @@ export const teaList = [
 
         <h4>🏷️ Ingredients</h4>
         <p>Mango • Mint • Bamboo Leaf • Monk Fruit</p>
-
-        <h4>🍵 Steep Instructions</h4>
-        <p>Use 1–2 tsp per 8 oz of hot water. Steep 5–7 minutes. Enjoy hot or over ice.</p>
 
         <p><em>✨ Refreshing, radiant, and full of purpose—“Chloe” is your herbal moment of tropical calm.</em></p>
       </>
@@ -332,8 +317,6 @@ export const teaList = [
         <h4>🏷️ Ingredients</h4>
         <p>Strawberries • Peppermint • Chamomile • Bamboo Leaf • Monk Fruit</p>
 
-        <h4>🍵 Steep Instructions</h4>
-        <p>1–2 tsp in 8oz hot water. Steep 5–7 minutes. Enjoy hot or over ice.</p>
       </>
     )
   },
