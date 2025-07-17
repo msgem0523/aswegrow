@@ -179,5 +179,162 @@ export const teaList = [
         <p><em>All-Natural | Caffeine-Free | Sugar-Free</em></p>
       </>
     )
-  }
+  },
+  {
+    id: 'zion',
+    name: 'Zion',
+    shortDesc: 'Fertility Support Tea – Rooted in Balance & Healing',
+    benefits: [
+      'Supports hormone balance and regular ovulation',
+      'Promotes uterine health and cycle regulation',
+      'Calms anxiety, mood swings, and promotes restful sleep',
+      'Boosts antioxidant levels for reproductive vitality',
+      'Caffeine-free and naturally sweet'
+    ],
+    fullContent: (
+      <>
+        <h2>🌿✨ “Zion” – Fertility Support Tea</h2>
+        <p><strong>A sacred blend rooted in balance, hope, and holistic healing.</strong></p>
+        <p>
+          More than just a tea, Zion is a womb-centered ritual—crafted to nourish the body, support hormone balance, and gently prepare the reproductive system for fertility, healing, and harmony.
+        </p>
+        <h3>💚 Why You’ll Love Zion</h3>
+        <ul>
+          <li><strong>🌸 Chasteberry (Vitex) –</strong> Supports progesterone levels & regular ovulation</li>
+          <li><strong>🌿 Red Clover –</strong> Rich in phytoestrogens & magnesium for uterine lining health</li>
+          <li><strong>🌼 Black Cohosh –</strong> Traditionally used to stimulate ovary function & ease menstrual cramps</li>
+          <li><strong>🍃 Sage –</strong> Supports hormone regulation, hot flash & sweat relief</li>
+          <li><strong>🌱 Lemon Balm & Chamomile –</strong> Soothe mood swings, anxiety & improve rest</li>
+          <li><strong>🍋 Citrus –</strong> Packed with vitamin C to encourage ovulation & hormone balance</li>
+          <li><strong>🍓 Berries –</strong> Rich in antioxidants that protect egg health and reproductive vitality</li>
+        </ul>
+        <h4>🏷️ Ingredients</h4>
+        <p>Chasteberry • Red Clover • Black Cohosh • Sage • Lemon Balm • Chamomile • Citrus • Berries • Monk Fruit (optional)</p>
+        <h4>🌿 Benefits</h4>
+        <ul>
+          <li>✔️ Supports hormone balance and ovulation</li>
+          <li>✔️ Encourages uterine and menstrual health</li>
+          <li>✔️ Calms mood and reduces anxiety</li>
+          <li>✔️ Boosts antioxidants for reproductive wellness</li>
+          <li>✔️ Caffeine-Free • Naturally Sweet • Holistic Healing</li>
+        </ul>
+        <h4>🍵 Steep Instructions</h4>
+        <p>Use 1–2 tsp per 8 oz of hot water. Steep 5–10 minutes. Drink warm or cool.</p>
+        <p><em>Please consult your healthcare provider if you are undergoing fertility treatment or on medication.</em></p>
+      </>
+    )
+  },
+  {
+    id: 'chloe',
+    name: 'Chloe',
+    shortDesc: 'Mango Mint Tea – Tropical Glow in Every Sip',
+    benefits: [
+      'Supports digestion, immunity & skin glow',
+      'Rich in vitamins & antioxidants for cellular health',
+      'Calms stress, reduces bloating & clears the mind',
+      'Caffeine-Free • Sugar-Free • Naturally Refreshing'
+    ],
+    fullContent: (
+      <>
+        <h2>🥭💚 “Chloe” – Mango Mint Tea</h2>
+        <p><strong>Sip into Radiance.</strong></p>
+        <p>
+          Bright, breezy, and beautifully balanced — “Chloe” is a tropical twist on herbal tea that nourishes from the inside out.
+          This juicy blend of fresh mango, cooling mint, and bamboo leaf is designed to support digestion, immunity, beauty, and mood—with zero sugar and all the glow.
+        </p>
+
+        <h3>🌟 Why You’ll Love It</h3>
+        <ul>
+          <li><strong>🥭 Mango –</strong> Rich in vitamins C, A & folate; supports skin, digestion, heart health & immunity.</li>
+          <li><strong>🌿 Mint –</strong> Calms digestion, freshens breath, clears the mind & supports stress relief.</li>
+          <li><strong>🎋 Bamboo Leaf –</strong> High in silica for healthy skin, hair, bones; detoxifying & anti-inflammatory.</li>
+          <li><strong>🍃 Monk Fruit –</strong> Naturally sweet, no sugar, no guilt.</li>
+        </ul>
+
+        <h4>🏷️ Ingredients</h4>
+        <p>Mango • Mint • Bamboo Leaf • Monk Fruit</p>
+
+        <h4>🍵 Steep Instructions</h4>
+        <p>Use 1–2 tsp per 8 oz of hot water. Steep 5–7 minutes. Enjoy hot or over ice.</p>
+
+        <p><em>✨ Refreshing, radiant, and full of purpose—“Chloe” is your herbal moment of tropical calm.</em></p>
+      </>
+    )
+  },
+  {
+    name: "Zay",
+    tagline: "Herbal Sweet Tea",
+    description: "A Southern vibe with a herbal glow. Zay takes everything you love about classic sweet tea and elevates it with bamboo leaf, mint, and monk fruit—no sugar, no caffeine, just plant-powered refreshment. Smooth, clean, and lightly sweet, this guilt-free brew delivers wellness in every sip.",
+    ingredients: [
+      "Mint",
+      "Bamboo Leaf",
+      "Monk Fruit"
+    ],
+    benefits: [
+      "Eases bloating & soothes digestion",
+      "Clears sinuses & sore throats",
+      "Enhances focus & reduces stress",
+      "Boosts immunity & breath freshness",
+      "Supports healthy skin, hair & bones (rich in silica)",
+      "Aids kidney & liver detox",
+      "Anti-inflammatory & antioxidant-rich",
+      "Zero sugar, diabetic-friendly & gut-supportive"
+    ],
+    fullContent: (
+      <>
+        <h2>🌱✨ “Zay” Herbal Sweet Tea</h2>
+        <p><strong>A Southern vibe with a herbal glow.</strong></p>
+        <p>
+          “Zay” takes everything you love about classic sweet tea and elevates it with bamboo leaf,
+          mint, and monk fruit—no sugar, no caffeine, just plant-powered refreshment.
+        </p>
+
+        <h3>🌿 Key Ingredients</h3>
+        <ul>
+          <li><strong>Mint:</strong> Soothes digestion, clears sinuses, and reduces stress</li>
+          <li><strong>Bamboo Leaf:</strong> Detoxifies and strengthens skin, hair, and bones</li>
+          <li><strong>Monk Fruit:</strong> Naturally sweet with zero calories or sugar</li>
+        </ul>
+
+        <h4>🍵 How to Enjoy</h4>
+        <p>Serve cold or over ice. Best enjoyed fresh. Shake gently and sip with purpose.</p>
+      </>
+    )
+  },
+  {
+    id: 'kylin',
+    name: 'Kylin',
+    shortDesc: 'Strawberry Mint Tea – Sweet. Soothing. Simply Refreshing.',
+    benefits: [
+      'Strawberries support immune, skin, and brain health',
+      'Peppermint calms digestion and clears the mind',
+      'Chamomile promotes rest, gut comfort, and stress relief',
+      'Naturally sweetened with monk fruit – no sugar crash'
+    ],
+    fullContent: (
+      <>
+        <h2>🍓🌿 “Kylin” – Strawberry Mint Tea</h2>
+        <p><strong>Sweet. Soothing. Simply Refreshing.</strong></p>
+        <p>
+          Kylin is your calming cup of clarity—an herbal blend made with real strawberries,
+          peppermint, chamomile, bamboo leaf, and monk fruit. Gentle, cooling, and naturally sweet,
+          it’s perfect for relaxing mornings, peaceful evenings, or any moment you need to center and reset.
+        </p>
+
+        <h3>🌟 Key Ingredients & Benefits</h3>
+        <ul>
+          <li><strong>🍓 Strawberries –</strong> Vitamin C, fiber, antioxidant-rich. Supports immune health, skin glow & digestion.</li>
+          <li><strong>🌿 Peppermint –</strong> Bloating relief, sinuses, clarity, and stress support.</li>
+          <li><strong>🌼 Chamomile –</strong> Encourages restful sleep, stress relief & gut ease.</li>
+          <li><strong>🍃 Monk Fruit –</strong> Naturally sweet with no sugar crash.</li>
+        </ul>
+
+        <h4>🏷️ Ingredients</h4>
+        <p>Strawberries • Peppermint • Chamomile • Bamboo Leaf • Monk Fruit</p>
+
+        <h4>🍵 Steep Instructions</h4>
+        <p>1–2 tsp in 8oz hot water. Steep 5–7 minutes. Enjoy hot or over ice.</p>
+      </>
+    )
+  },
 ];
